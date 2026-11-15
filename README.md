@@ -1,6 +1,8 @@
 
 # Limit Order Book (LOB) Matching Engine
 
+(Α C++ implementation of this project is planned for the near future.)
+
 A deterministic Limit Order Book (LOB) matching engine implementing strictly enforced **Price-Time Priority**.
 
 ## Architecture
@@ -29,5 +31,3 @@ javac Engine.java OrderBook.java Order.java Trade.java
 # Run the simulation
 java Engine
 ```
-
-Α C++ implementation of this project is planned for the near future.
