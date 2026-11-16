@@ -1,6 +1,6 @@
 
 # Limit Order Book (LOB) Matching Engine
-[![Limit Order Book CI](https://github.com/stefkotidis-prog/lob-matching-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/stefkotidis-prog/lob-matching-engine/actions/workflows/ci.yml)
+[![Limit Order Book CI](https://github.com/stefkotidis-prog/lob-matching-engine/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/stefkotidis-prog/lob-matching-engine/actions/workflows/ci.yml)
 
 A deterministic Limit Order Book (LOB) matching engine implementing strictly enforced **Price-Time Priority**.
 
