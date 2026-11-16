@@ -1,3 +1,4 @@
+package main;
 public record Trade(
     String buyerId, 
     String sellerId, 
