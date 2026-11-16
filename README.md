@@ -1,7 +1,6 @@
 
 # Limit Order Book (LOB) Matching Engine
-
-(Α C++ implementation of this project is planned for the near future.)
+[![Limit Order Book CI](https://github.com/stefkotidis-prog/lob-matching-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/stefkotidis-prog/lob-matching-engine/actions/workflows/ci.yml)
 
 A deterministic Limit Order Book (LOB) matching engine implementing strictly enforced **Price-Time Priority**.
 
@@ -22,12 +21,11 @@ The core matching engine is built upon two Priority Queues :
 
 ## Quick Start
 
-To compile and run the simulation engine:
+The project is built using Maven. To compile and run the engine locally:
 
 ```bash
-# Compile the Java source files
-javac Engine.java OrderBook.java Order.java Trade.java
+# Compile the project and run all unit tests
+mvn clean test
 
-# Run the simulation
-java Engine
-```
+# Run the core matching engine simulation
+mvn exec:java -Dexec.mainClass="Engine"
