@@ -1,4 +1,4 @@
-package main;
+package main.java;
 public record Trade(
     String buyerId, 
     String sellerId, 
