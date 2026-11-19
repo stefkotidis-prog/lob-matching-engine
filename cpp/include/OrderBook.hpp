@@ -20,4 +20,4 @@ class OrderBook {
         Side side;
     };
     
-}
+};
