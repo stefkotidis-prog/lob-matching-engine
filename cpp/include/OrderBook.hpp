@@ -19,5 +19,13 @@ class OrderBook {
         OrderQueue::iterator position;
         Side side;
     };
-    
+
+std::map<Price, OrderQueue, std::greater<Price>> buy_;
+
+std::map<Price, OrderQueue> sell_;
+
+std::unordered_map<OrderId, OrderLocation> tradeIndex_;
+
+void assignTrade(Order& order, std::vector<Trade>& trade);
+//follow up from here
 };
