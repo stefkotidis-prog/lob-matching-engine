@@ -29,6 +29,11 @@ private:
     void matchOrder(Order& order, std::vector<Trade>& trades);
 
 public: 
+
+    OrderBook() = default;
+    OrderBook(const OrderBook&) = delete;
+    OrderBook& operator=(const OrderBook&) = delete;
+    
     std::vector<Trade> addOrder(Order order);
 
     bool cancelOrder(OrderId orderId);
