@@ -10,7 +10,7 @@
 #include "Order.hpp"
 
 class OrderBook {
-    private:
+private:
 
     using OrderQueue = std::list<Order>;
 
@@ -20,12 +20,20 @@ class OrderBook {
         Side side;
     };
 
-std::map<Price, OrderQueue, std::greater<Price>> buy_;
+    std::map<Price, OrderQueue, std::greater<Price>> buy_;
 
-std::map<Price, OrderQueue> sell_;
+    std::map<Price, OrderQueue> sell_;
 
-std::unordered_map<OrderId, OrderLocation> tradeIndex_;
+    std::unordered_map<OrderId, OrderLocation> orderIndex_;
 
-void assignTrade(Order& order, std::vector<Trade>& trade);
-//follow up from here
+    void matchOrder(Order& order, std::vector<Trade>& trades);
+
+public: 
+    std::vector<Trade> addOrder(Order order);
+
+    bool cancelOrder(OrderId orderId);
+
+    std::optional<Price> getBestBid() const;
+    std::optional<Price> getBestAsk() const;
+    std::size_t getOrderCount() const;
 };
