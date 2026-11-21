@@ -7,6 +7,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(lob_engine
     src/main.cpp
+    src/OrderBook.cpp
 )
 
 target_include_directories(lob_engine PRIVATE include)
